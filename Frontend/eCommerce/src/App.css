@@ -1,0 +1,332 @@
+body{
+  /* background-color: black;
+  margin: 0; */
+  /* background-color: #363648;
+opacity: 0.8;
+background-image: radial-gradient(circle at center center, #1f9082, #363648), repeating-radial-gradient(circle at center center, #1f9082, #1f9082, 10px, transparent 20px, transparent 10px);
+background-blend-mode: multiply; */
+/* background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(42,39,99,1) 35%, rgb(39, 42, 43) 100%); */
+background-color: #4f4f86;
+opacity: 0.8;
+background-image: radial-gradient(circle at center center, #060806, #4f4f86), repeating-radial-gradient(circle at center center, #060806, #060806, 33px, transparent 66px, transparent 33px);
+background-blend-mode: multiply;
+}
+.navContainer{
+  display: flex;
+  align-items: center;
+  
+  margin-right: 40px;
+  margin-bottom: 30px;
+  position: fixed;
+  top:0;
+  width: 100%;
+  box-shadow: 1px 1px grey;
+} 
+.navheading{
+  margin-right: 20px;
+  margin-left: 20px;
+  color:aqua;
+
+}
+.navheading span{
+  font-size: 45px;
+}
+.registerHeading{
+  color:aqua   ;
+}
+.loginHeading{
+  color:aqua;
+}
+.navContent{
+  display: flex;
+  padding: 5px,5px,5px,5px;
+  margin-right: 10px;
+  position: absolute;
+  right: 0;
+
+}
+.navContent1 a{
+  margin-right: 30px;
+  color:white
+}
+.navContent2 a{
+  margin-right: 30px;
+  color:white
+}
+.navContent3 a{
+  margin-right: 30px;
+  color:white
+}
+.navContent4 a{
+  margin-right: 30px;
+  color:white
+}
+@media only screen and (max-width: 768px) {
+  .navContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navContent {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .navContent h3 {
+    margin: 5px 0;
+  }
+
+  .navheading {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navContent1 a,
+  .navContent2 a,
+  .navContent3 a,
+  .navContent4 a {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+.registerHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 27px;
+
+}
+.loginHeading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 27px;
+
+}
+.registerDetails{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginDetails{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.name,
+.email,
+.contact,
+.address,
+.password {
+  background-color: rgb(209, 201, 201);
+  border-radius: 10%;
+  color: white;
+}
+
+.registerContainer .loginContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin: 5px;
+  padding: 10px;
+}
+.registerButton{
+  border-radius: 10px;
+  height: 30px;
+  width: 60px;
+  margin-top: 10px;
+}
+.loginButton{
+  border-radius: 10px;
+  height: 30px;
+  width: 60px;
+  margin-top: 10px;
+}
+.sample{
+  color: white;
+  margin-top:90px ;
+}
+.dashboard{
+  color:white;
+  margin-top: 100px;;
+}
+.ContainerAdminCard {
+  display: flex;
+  justify-content: flex-start;
+  width: 25%; /* 1/4th part of the page */
+  flex-direction: column;
+  margin-top: 150px; /* Adjust the margin to move the cards down */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px; 
+}
+
+/* .ContainerCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px; 
+  flex-direction: column;
+} */
+
+.AdminCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 4px;
+  height: 40px;
+  background-color: #f0f0f0; /* Background color for the cards */
+  border-radius: 5px; /* Rounded corners for the cards */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for the cards */
+}
+
+.CardBody {
+  padding: 10px; /* Padding for the card body */
+}
+
+/* Styling the links */
+.ContainerCard a {
+  text-decoration: none;
+  color: #333; /* Link color */
+}
+
+.ContainerCard a:hover {
+  color: #666; /* Link color on hover */
+}
+
+@media only screen and (max-width: 768px) {
+  .ContainerAdminCard {
+    width: 60%;
+    margin: top 50px; /* Full width on smaller screens */ /* Center align on smaller screens */
+  }
+}
+.navposition{
+  gap: 10px;
+}
+/* 
+.ContainerAdminCard {
+  display: flex;
+  justify-content: flex-start;
+  width: 25%; 
+  flex-direction: column;
+}
+
+.ContainerCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px; 
+}
+
+.AdminCard {
+  width: 100%;
+  background-color: #f0f0f0; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.CardBody {
+  padding: 10px; 
+}
+
+
+.ContainerCard a {
+  text-decoration: none;
+  color: #333 
+}
+
+.ContainerCard a:hover {
+  color: #666; 
+} */
+.createHeader{
+  color: white;
+  margin-top: 105px;
+  margin-left: 20px;
+}
+.createProduct{
+  display: flex;
+}
+.adminCreateProduct{
+  display: flex;
+}
+
+
+
+.navposition {
+  margin-bottom: 30px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.content-container {
+  padding-top: 80px; 
+}
+
+.ContainerAdminCard {
+  display: flex;
+  justify-content: center;
+  width:100%;
+  margin-top: 20px;
+  overflow-x: auto; 
+}
+
+
+
+.AdminCard {
+  width: 150px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.CardBody {
+  padding: 10px;
+}
+
+.ContainerCard a {
+  text-decoration: none;
+  color: #333;
+}
+
+.ContainerCard a:hover {
+  color: #666;
+}
+
+@media only screen and (max-width: 800px) {
+  .ContainerAdminCard {
+    padding: 0 10px; /* Add horizontal padding on smaller screens */
+    overflow-x: auto; /* Add horizontal scroll on smaller screens */
+  }
+}
+.modaltext1{
+  color: white;
+}
+.modal-body-custom {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 10px;
+  font-size: 1.0em; /* Adjust the font size if needed */
+  color: white;
+}
+.dropdownitem{
+  color: white;
+  flex-direction: column ;
+}
+.productContainer{
+  display: flex;
+}
+.dropDown{
+  margin-top: 140px;
+  margin-left: 40px;
+}
